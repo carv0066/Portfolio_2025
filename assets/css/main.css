@@ -1998,51 +1998,127 @@ button:hover,
 
 }
 
+/* Home Styles */
+
+/* Location icon styling */
+.location-icon {
+    color: #4CE6A6;
+    height: 14px;
+    margin-right: 8px;
+}
+
+/* Location text container */
+.location {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* Horizontal line styling */
+.divider {
+    border: none;
+    border-top: 2px dotted rgba(255, 255, 255, 0.3);
+    margin: 0 20px;
+    flex: 1;
+}
+
+/* Container for location, divider, and button */
+.info-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 2rem;
+}
+
+/* Location container */
+.location-container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+/* Button container */
+.actions {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+    .info-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .location-container {
+        width: 100%;
+    }
+
+    .actions {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+    }
+}
+
 
 /* Features */
 
 
 .features {
-	display: grid;
-	/* Use grid layout */
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	/* Auto-fit columns with a minimum width of 300px */
-	grid-gap: 1.5em;
-	/* Space between items */
-	justify-items: stretch;
-	/* Make sections stretch to fill the grid space */
-	padding: 1em 2em 2em 2em;
-	/* Padding around the grid */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1.5em;
+    justify-items: stretch;
+    padding: 1em 2em 2em 2em;
 }
 
 .features section {
-	padding: 2.5em 3em 2em 7em;
-	border: solid 1px rgba(255, 255, 255, 0.15);
-	border-radius: 5px;
-	position: relative;
-	box-sizing: border-box;
-	/* Ensure padding is included in width and height */
-	text-align: center;
-	display: flex;
-	/* Use flexbox to control the layout inside */
-	flex-direction: column;
-	/* Stack image and text vertically */
-	align-items: center;
-	/* Center image and text horizontally */
-	justify-content: center;
-	/* Center image and text vertically */
+    height: 120px;
+    padding: 1.5em 2em;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row; /* Changed to row to place image and text side by side */
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.15);
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    gap: 1em; /* Space between image and text */
 }
 
 .features section .icon-image {
-	transition: opacity 0.5s ease, transform 0.5s ease;
-	transform: scale(1);
-	position: absolute;
-	left: 3em;
-	top: 2em;
-	opacity: 1;
-	width: 48px;
-	/* Adjust size as needed */
-	height: 48px;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0; /* Prevents image from shrinking */
+}
+
+.features section .text-features {
+    text-align: left; /* Aligns text to the left */
+    display: flex;
+    flex-direction: column;
+    gap: 0; /* Space between h3 and p */
+}
+
+.features section h3 {
+    margin: 0;
+    font-size: 1em;
+}
+
+.features section p {
+    margin: 0;
+    font-size: 0.83em;
+    color: rgb(153, 153, 153);
+}
+
+.stack-title {
+	padding-top: 25px;
 }
 
 /* Apply the transition delay for each nth child */
@@ -2102,66 +2178,77 @@ button:hover,
 	}
 }
 
-/* Project */
-
 .projects {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	/* Flexible grid layout */
-	grid-gap: 2em;
-	padding: 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2em;
+    padding: 2em;
+	background-color: rgb(5, 5, 5);
 }
 
 .project-card {
-	/* background-color: #fff; */
-	border: 1px solid #ccc;
-	/* Border for each project card */
-	border-radius: 5px;
-	padding: 2em;
-	box-sizing: border-box;
-	text-align: center;
-	transition: transform 0.3s ease-in-out;
-	/* Smooth scale transition on hover */
+	position: relative;
+    background-color: rgba(255, 255, 255, 0.15); /* Dark, semi-transparent background */
+    border-radius: 10px;
+    padding: 1.5em;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    transition: all 0.3s ease;
 }
 
 .project-card img {
-	width: 100%;
-	/* Make sure the image fits the container */
-	height: 8em;
-	/* Set a fixed height (adjust as needed) */
-	object-fit: cover;
-	/* Ensures the image covers the area without distorting */
-	border-radius: 5px;
-	/* Rounded corners for the image */
-	margin-bottom: 1em;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.5em;
 }
 
 .project-card h5 {
-	margin: 0.5em 0;
-	font-size: 1.2em;
+	text-align: center;
+    margin: 0;
+    font-size: 1.1em;
+    color: #ffffff;
 }
 
 .project-card p {
-	font-size: 0.8em;
-	margin-bottom: 1.5em;
-	color: #ffffff;
-	/* Lighter text for the description */
+    font-size: 0.85em;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.4;
 }
 
-.project-link {
-	color: #007BFF;
-	/* Blue link color */
-	text-decoration: none;
-	font-weight: bold;
+.project-card .text-projectcard {
+	color: #4CE6A6;
 }
 
 .project-card:hover {
-	transform: scale(1.05);
-	/* Slightly enlarge the card on hover */
+    transform: translateY(-5px);
+    background-color: rgba(255, 255, 255, 0.203); /* Slightly darker on hover */
 }
 
-.project-card a:hover {
-	text-decoration: underline;
+/* Project Icons */
+
+.project-icons {
+    position: absolute;
+    right: 10px; /* Distance from right edge */
+    bottom: 10px; /* Distance from bottom edge */
+    display: flex;
+    gap: 10px;
+	padding: 0px 15px;
+}
+
+.project-icons a {
+    color: #4CE6A6;
+    text-decoration: none;
+	border: none;
+    transition: transform 0.3s ease;
+}
+
+.project-icons a:hover {
+    transform: scale(1.2);
 }
 
 /* Media Queries for responsiveness */
@@ -2179,6 +2266,136 @@ button:hover,
 	}
 }
 
+
+/* Contact Form Styles */
+
+/* General styles for contact items */
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px; /* Add border radius for rounded corners */
+    padding: 10px 0px;
+}
+
+/* Style for icons */
+.contact-item i { /* Icon color */
+    font-size: 1.2rem; /* Adjust icon size */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Links and spans */
+.contact a,
+.contact span {
+    text-decoration: none; /* Remove underline */
+	border: none;
+    color: inherit; /* Inherit the default color */
+    transition: color 0.1s ease; /* Smooth hover effect */
+}
+
+/* Hover effects for icons and text */
+.contact-item:hover {
+    color: #4CE6A6; /* Changes the color of both icons and text */
+}
+
+.contact-item:hover i {
+    transform: scale(1.2); /* Increases the icon size only */
+}
+
+/* Social icons styling */
+.icons a {
+    display: inline-block; /* Ensures icons are displayed as blocks */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for icon size */
+}
+
+/* Hover effects for social icons */
+.icons a:hover {
+    transform: scale(1.2); /* Increase the size of the social icons */
+    color: #4CE6A6; /* Change color when hovered */
+}
+
+/* Submit button styling */
+.button.submit {
+    background-color: #4CE6A6; /* Default button background color */
+    color: black; /* Default button text color */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.button.submit:hover {
+    background-color: rgba(239, 239, 239, 0.15); /* Darker green on hover */
+    color: #4CE6A6; /* Text color remains black */
+}
+
+/* Hover effects for individual links and spans */
+.contact a:hover,
+.contact span:hover {
+    color: #4CE6A6;
+    text-decoration: none !important;
+}
+
+.contact-item i,
+.icons a i,
+.icons a {
+	font-size: 16px;
+    height: 16px;
+    width: 16px;
+}
+
+
+/* Ensure the name and email appear in the same row */
+.fields {
+    display: flex; /* Use flexbox for row layout */
+    justify-content: space-around;
+	gap: 0;
+    margin-bottom: 20px; /* Optional spacing below the inputs */
+}
+
+/* Ensure the name and email fields are equal width in the same row */
+.fields .field {
+    width: 100%;
+}
+
+/* Button should have the same width as the textarea */
+ul.actions .button.submit {
+    width: 100%; /* Makes the button take up the full width */
+}
+
+/* For mobile responsiveness */
+@media (max-width: 767px) {
+    .fields .field {
+        width: 100%; /* Stacks the fields on mobile */
+    }
+
+    /* Button remains the same width as textarea */
+    ul.actions .button.submit {
+        width: 100%; /* Ensure the button takes full width on mobile */
+    }
+}
+
+/* Textarea should be below the name/email fields */
+.fields .field textarea {
+    width: 100%; /* Textarea takes full width below */
+    margin-top: 10px; /* Adds space between the fields */
+}
+
+/* Responsive styling for mobile (stack fields vertically) */
+@media (max-width: 767px) {
+    .fields {
+        flex-direction: column; /* Stack fields vertically on smaller screens */
+        gap: 10px;
+    }
+
+    .fields .field {
+        width: 100%; /* Make each field full width */
+    }
+}
+
+/* Placeholder text color */
+.fields .field input::placeholder,
+.fields .field textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Set placeholder text color */
+}
 
 
 /* Form */
@@ -2218,7 +2435,7 @@ form>.fields>.field {
 }
 
 form>.fields>.field.half {
-	width: calc(50% - 0.75em);
+	width: calc(48% - 0.75em);
 }
 
 form>.fields>.field.third {
@@ -2274,7 +2491,7 @@ textarea {
 	-webkit-appearance: none;
 	-ms-appearance: none;
 	appearance: none;
-	background: rgba(255, 255, 255, 0.05);
+	background: rgba(187, 187, 187, 0.05);
 	border-radius: 0.25em;
 	border: none;
 	border: solid 1px rgba(255, 255, 255, 0.15);
