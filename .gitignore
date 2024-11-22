@@ -30,3 +30,4 @@ dist-ssr/
 
 # Sensitive files
 config.js
+.env
