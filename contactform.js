@@ -1,8 +1,6 @@
-import config from './config.js';
-
 // Initialize EmailJS
 (function() {
-    emailjs.init(config.EMAILJS_PUBLIC_KEY);
+    emailjs.init("S7UcLAotUQAln57kT"); // Replace with your actual public key
     console.log('EmailJS initialized');
 })();
 
@@ -44,14 +42,13 @@ function sendEmail() {
 
     // Send email using EmailJS
     emailjs.send(
-        config.SERVICE_ID,
-        config.TEMPLATE_ID,
+        "service_x1yr1y7",    // Replace with your actual service ID
+        "template_er5f727",   // Replace with your actual template ID
         templateParams
     )
     .then(function(response) {
         console.log('Email sent successfully:', response);
         
-        // Show success message using SweetAlert2
         Swal.fire({
             icon: 'success',
             title: 'Success!',
@@ -66,7 +63,6 @@ function sendEmail() {
     .catch(function(error) {
         console.error('EmailJS error details:', error);
         
-        // Show error message using SweetAlert2
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
