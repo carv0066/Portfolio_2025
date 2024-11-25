@@ -1,2 +1,2 @@
-# 📂 Portfolio 2025  
-Showcasing My Journey in Web Development, UX Design, and Beyond  
+# 📂 Portfolio 2025   
+Hi! I’m Carlos, a passionate FUll Stack Developer. 
