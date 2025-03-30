@@ -188,6 +188,10 @@ html {
 	box-sizing: inherit;
 }
 
+body {
+	background: #3e7c46;
+}
+
 body.is-preload *,
 body.is-preload *:before,
 body.is-preload *:after {
