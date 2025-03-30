@@ -12,6 +12,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 	<noscript>
@@ -24,34 +27,35 @@
 	<section id="sidebar">
 		<div class="inner">
 			<nav>
+				<img src="images/profile.JPG" alt="Profile photo" class="profile-photo">
 				<ul>
 					<li>
 						<a href="#intro">
-							<img src="images/home-icon.svg" alt="Home icon" class="nav-icon">
+							<i class="fa-solid fa-house nav-icon"></i>
 							Home
 						</a>
 					</li>
 					<li>
 						<a href="#one">
-							<img src="images/about-icon.svg" alt="About icon" class="nav-icon">
+							<i class="fa-solid fa-user nav-icon"></i>
 							About
 						</a>
 					</li>
 					<li>
 						<a href="#two">
-							<img src="images/stack-icon.svg" alt="Stack icon" class="nav-icon">
+							<i class="fa-solid fa-layer-group nav-icon"></i>
 							Stack
 						</a>
 					</li>
 					<li>
 						<a href="#three">
-							<img src="images/project-icon.svg" alt="Projects icon" class="nav-icon">
+							<i class="fa-solid fa-cubes nav-icon"></i>
 							Projects
 						</a>
 					</li>
 					<li>
 						<a href="#four">
-							<img src="images/contact-icon.svg" alt="Contact icon" class="nav-icon">
+							<i class="fa-solid fa-envelope nav-icon"></i>
 							Contact
 						</a>
 					</li>
@@ -67,21 +71,22 @@
 		<section id="intro" class="wrapper style1 fullscreen fade-up">
 			<div class="inner">
 				<h1>Hello! I'm Carlos Carvajal.</h1>
-				<p>A passionate web developer with a talent for turning ideas into visually engaging, user-focused
+				<p class="home-p">A passionate web developer with a talent for turning ideas into visually engaging,
+					user-focused
 					websites.</p>
 				<div class="info-row">
 					<div class="location-container">
 						<p class="location">
-							<i class="fa-solid fa-location-dot location-icon"></i>
-							<span>Ottawa, Ontario</span>
+							<i class="fa-solid fa-location-dot location-icon home-location"></i>
+							<span class="home-p">Ottawa, Ontario</span>
 						</p>
-						<hr class="divider">
+						<hr class="divider home-divider">
 					</div>
 					<ul class="actions">
 						<li>
-							<a href="#one" class="button scrolly">
+							<a href="#one" class="button scrolly home-button">
 								More about Me
-								<img src="images/arrow.svg" class="arrow">
+								<!-- <img src="images/arrow.svg" class="arrow"> -->
 							</a>
 						</li>
 					</ul>
@@ -94,8 +99,9 @@
 			<section>
 				<div class="content">
 					<div class="inner">
-						<h2>Get to Know Me</h2>
-						<p>Hey! I'm Carlos, a web developer passionate about crafting user-friendly websites. I focus on
+						<h2 class="subtitle">Get to Know Me</h2>
+						<p class="about-p">Hey! I'm Carlos, a web developer passionate about crafting user-friendly
+							websites. I focus on
 							clean code and sleek designs to deliver standout online experiences. Let's work together to
 							bring your web projects to life!With an emphasis on clean code and sleek designs, I aim to
 							elevate your web projects to the next level.</p>
@@ -103,21 +109,22 @@
 						<div class="info-row">
 							<div class="location-container">
 								<p class="location">
-									<i class="fa-solid fa-location-dot location-icon"></i>
-									<span>Ottawa, Ontario</span>
+									<i class="fa-solid fa-location-dot location-icon about-location"></i>
+									<span class="about-p">Ottawa, Ontario</span>
 								</p>
 								<hr class="divider">
 							</div>
 						</div>
-						<h3 class="stack-title">Stack</h3>
-						<p>My technical toolkit includes proficiency in JavaScript, TypeScript, SQL, HTML5, CSS, and
+						<h3 class="subtitle sub-style">Stack</h3>
+						<p class="par-style">My technical toolkit includes proficiency in JavaScript, TypeScript, SQL,
+							HTML5, CSS, and
 							PHP. I am skilled in using developer tools like Postman, Git, and VSCode to streamline the
 							development process. My experience extends to libraries and frameworks such as ReactJS,
 							Node.js, Vue.js, Nuxt.js, PostgreSQL, and Docker. Additionally, I utilize design software
 							like Figma for UI/UX design.</p>
 
 						<ul class="actions">
-							<li><a href="#two" class="button scrolly">View my Stack</a></li>
+							<li><a href="#two" class="button scrolly about-button">View my Stack</a></li>
 						</ul>
 					</div>
 				</div>
@@ -127,90 +134,90 @@
 		<!-- Stack -->
 		<section id="two" class="wrapper style3 fullscreen fade-up">
 			<div class="inner">
-				<h2>Stack</h2>
+				<h2 class="subtitle">Stack</h2>
 				<div class="features">
 					<section>
 						<img src="images/js.svg" alt="JavaScript" class="icon-image">
 						<div class="text-features">
-							<h3>JavaScript</h3>
-							<p>Web development</p>
+							<h3 class="subtitle">JavaScript</h3>
+							<p class="par-style">Web development</p>
 						</div>
 					</section>
 					<section>
 						<img src="images/typescript.svg" alt="TypeScript" class="icon-image">
 						<div class="text-features">
-							<h3>TypeScript</h3>
-							<p>Web development</p>
+							<h3 class="subtitle">TypeScript</h3>
+							<p class="par-style">Web development</p>
 						</div>
 					</section>
 					<section>
 						<img src="images/reactjs.svg" alt="React" class="icon-image">
 						<div class="text-features">
-							<h3>React</h3>
-							<p>Dynamic Development</p>
+							<h3 class="subtitle">React</h3>
+							<p class="par-style">Dynamic Development</p>
 						</div>
 					</section>
 					<section>
 						<img src="images/vuejs.svg" alt="Vue" class="icon-image">
 						<div class="text-features">
-							<h3>Vue</h3>
-							<p>Dynamic Development</p>
+							<h3 class="subtitle">Vue</h3>
+							<p class="par-style">Dynamic Development</p>
 						</div>
 					</section>
 					<section>
 						<img src="images/nodejs.svg" alt="Node.js" class="icon-image">
 						<div class="text-features">
-							<h3>Node.js</h3>
-							<p>Server-Side Development</p>
+							<h3 class="subtitle">Node.js</h3>
+							<p class="par-style">Server-Side Development</p>
 						</div>
 					</section>
 					<section>
-						<img src="images/js.svg" alt="JavaScript" class="icon-image">
+						<img src="images/nuxtjs.svg" alt="JavaScript" class="icon-image">
 						<div class="text-features">
-							<h3>Nuxt.js</h3>
-							<p>Server-Side Development</p>
+							<h3 class="subtitle">Nuxt.js</h3>
+							<p class="par-style">Server-Side Development</p>
 						</div>
 					</section>
 					<section>
 						<img src="images/php.svg" alt="PHP" class="icon-image">
 						<div class="text-features">
-							<h3>PHP</h3>
-							<p>Development</p>
+							<h3 class="subtitle">PHP</h3>
+							<p class="par-style">Development</p>
 						</div>
 					</section>
 					<section>
 						<img src="images/docker.svg" alt="Docker" class="icon-image">
 						<div class="text-features">
-							<h3>Docker</h3>
-							<p>Deployment</p>
+							<h3 class="subtitle">Docker</h3>
+							<p class="par-style">Deployment</p>
 						</div>
 					</section>
 					<section>
 						<img src="images/postgresql.svg" alt="PostgreSQL" class="icon-image">
 						<div class="text-features">
-							<h3>PostgreSQL</h3>
-							<p>Databases</p>
+							<h3 class="subtitle">PostgreSQL</h3>
+							<p class="par-style">Databases</p>
 						</div>
 					</section>
 					<section>
 						<img src="images/html5.svg" alt="html5" class="icon-image">
 						<div class="text-features">
-							<h3>HTML 5</h3>
-							<p>Structure and Content</p>
+							<h3 class="subtitle">HTML 5</h3>
+							<p class="par-style">Structure and Content</p>
 						</div>
 					</section>
 					<section>
 						<img src="images/css3.svg" alt="css3" class="icon-image">
 						<div class="text-features">
-							<h3>CSS 3</h3>
-							<p>Visual Styling</p>
+							<h3 class="subtitle">CSS 3</h3>
+							<p class="par-style">Visual Styling</p>
 						</div>
 					</section>
 					<section>
 						<img src="images/figma.svg" alt="Figma" class="icon-image">
 						<div class="text-features">
-							<h3>Figma</h3>
-							<p>Collaborative Design</p>
+							<h3 class="subtitle">Figma</h3>
+							<p class="par-style">Collaborative Design</p>
 						</div>
 					</section>
 				</div>
@@ -219,58 +226,63 @@
 
 		<!-- Projects -->
 		<div id="three" class="wrapper style3 fullscreen fade-up">
-			<div class="projects">
-				<div class="project-card">
-					<img src="images/Brain.JPG" alt="Smart Brain Screenshot">
-					<h5>Smart Brain</h5>
-					<p>A full-stack facial recognition web application built using Clarifai API for face detection.</p>
-					<p class="text-projectcard">ReactJS, ExpressJS, NodeJS, PostgreSQL</p>
+			<div class="inner">
+				<h2 class="subtitle-two">Projects</h2>
+				<div class="projects">
+					<div class="project-card">
+						<img src="images/Brain.JPG" alt="Smart Brain Screenshot">
+						<h5 class="subtitle">Smart Brain</h5>
+						<p class="par-style">A full-stack facial recognition web application built using Clarifai API for face detection.
+						</p>
+						<p class="text-projectcard">ReactJS, ExpressJS, NodeJS, PostgreSQL</p>
 
-					<div class="project-icons">
-						<!-- GitHub Icon -->
-						<a href="https://github.com/carv0066/face-recognition-brain" target="_blank">
-							<i class="fab fa-github"></i>
-						</a>
-						<!-- Demo Link Icon -->
-						<a href="https://face-recognition-brain-99ek.onrender.com/" target="_blank">
-							<i class="fa-solid fa-arrow-up-right-from-square"></i>
-						</a>
+						<div class="project-icons">
+							<!-- GitHub Icon -->
+							<a href="https://github.com/carv0066/face-recognition-brain" target="_blank">
+								<i class="fab fa-github"></i>
+							</a>
+							<!-- Demo Link Icon -->
+							<a href="https://face-recognition-brain-99ek.onrender.com/" target="_blank">
+								<i class="fa-solid fa-arrow-up-right-from-square"></i>
+							</a>
+						</div>
 					</div>
-				</div>
-				<div class="project-card">
-					<img src="images/Chatbot.JPG" alt="Fitness Chatbot Screenshot">
-					<h5>AI Fitness Chatbot</h5>
-					<p>Personal fitness assistant built with Nuxt.js and OpenAI API that provides customized workout and
-						nutrition guidance.</p>
-					<p class="text-projectcard">VueJS, NuxtJS, TypeScript</p>
+					<div class="project-card">
+						<img src="images/Chatbot.JPG" alt="Fitness Chatbot Screenshot">
+						<h5 class="subtitle">AI Fitness Chatbot</h5>
+						<p class="par-style">Personal fitness assistant built with Nuxt.js and OpenAI API that provides customized workout
+							and
+							nutrition guidance.</p>
+						<p class="text-projectcard">VueJS, NuxtJS, TypeScript</p>
 
-					<div class="project-icons">
-						<!-- GitHub Icon -->
-						<a href="https://github.com/carv0066/AI-Chatbot-Assistant" target="_blank">
-							<i class="fab fa-github"></i>
-						</a>
-						<!-- Demo Link Icon -->
-						<a href="https://ai-chatbot-assistant-g5mx.onrender.com/" target="_blank">
-							<i class="fa-solid fa-arrow-up-right-from-square"></i>
-						</a>
+						<div class="project-icons">
+							<!-- GitHub Icon -->
+							<a href="https://github.com/carv0066/AI-Chatbot-Assistant" target="_blank">
+								<i class="fab fa-github"></i>
+							</a>
+							<!-- Demo Link Icon -->
+							<a href="https://ai-chatbot-assistant-g5mx.onrender.com/" target="_blank">
+								<i class="fa-solid fa-arrow-up-right-from-square"></i>
+							</a>
+						</div>
 					</div>
-				</div>
-				<div class="project-card">
-					<img src="images/maze.JPG" alt="Pathfinding algorithm maze screenshot">
-					<h5>Pathfinding Visualizer</h5>
-					<p>Interactive React application that visualizes pathfinding algorithms (BFS and DFS) through
-						randomized mazes in real-time.</p>
-					<p class="text-projectcard">ReactJS</p>
+					<div class="project-card">
+						<img src="images/maze.JPG" alt="Pathfinding algorithm maze screenshot">
+						<h5 class="subtitle">Pathfinding Visualizer</h5>
+						<p class="par-style">Interactive React application that visualizes pathfinding algorithms (BFS and DFS) through
+							randomized mazes in real-time.</p>
+						<p class="text-projectcard">ReactJS</p>
 
-					<div class="project-icons">
-						<!-- GitHub Icon -->
-						<a href="https://github.com/carv0066/pathfinding-algorithm-visualizer" target="_blank">
-							<i class="fab fa-github"></i>
-						</a>
-						<!-- Demo Link Icon -->
-						<a href="https://carv0066.github.io/pathfinding-algorithm-visualizer/" target="_blank">
-							<i class="fa-solid fa-arrow-up-right-from-square"></i>
-						</a>
+						<div class="project-icons">
+							<!-- GitHub Icon -->
+							<a href="https://github.com/carv0066/pathfinding-algorithm-visualizer" target="_blank">
+								<i class="fab fa-github"></i>
+							</a>
+							<!-- Demo Link Icon -->
+							<a href="https://carv0066.github.io/pathfinding-algorithm-visualizer/" target="_blank">
+								<i class="fa-solid fa-arrow-up-right-from-square"></i>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -279,9 +291,9 @@
 		<!-- Contact -->
 		<section id="four" class="wrapper style1 fullscreen fade-up">
 			<div class="inner">
-				<h2>Contact Me</h2>
-				<p>Thank you for your interest in connecting with me!</p>
-				<p>
+				<h2 class="subtitle">Contact Me</h2>
+				<p class="par-style">Thank you for your interest in connecting with me!</p>
+				<p class="par-style">
 					I value open communication and am always eager to discuss new opportunities, answer questions, or
 					hear your feedback. Please feel free to reach out by filling out the contact form below or emailing
 					me directly at carlosjeffreycarvajal21@gmail.com.I look forward to hearing from you and exploring
@@ -290,10 +302,10 @@
 				<div class="split style1">
 					<section>
 						<form method="post" action="javascript:void(0);" onsubmit="sendEmail()">
-							<h3>Message Me</h3>
+							<h3 class="subtitle">Message Me</h3>
 							<div class="fields">
 								<div class="field half">
-									<input type="text" name="name" id="name" placeholder="Name" />
+									<input class="contact-input" type="text" name="name" id="name" placeholder="Name"/>
 								</div>
 								<div class="field half">
 									<input type="text" name="email" id="email" placeholder="Email" />
@@ -313,7 +325,7 @@
 
 					</section>
 					<section>
-						<h3>Contact</h3>
+						<h3 class="subtitle">Contact</h3>
 						<ul class="contact">
 							<li>
 								<div class="contact-item">
@@ -326,12 +338,12 @@
 								</div>
 							</li>
 							<li>
-								<h3>Social</h3>
+								<h3 class="subtitle">Social</h3>
 								<ul class="icons">
-									<li><a href="https://github.com/carv0066" class="icon brands fa-github"
+									<li><a href="https://github.com/carv0066" class="icon icon-contact brands fa-github"
 											target="_blank"><span class="label">GitHub</span></a></li>
 									<li><a href="https://www.linkedin.com/in/carlos-carvajal-rodriguez/"
-											class="icon brands fa-linkedin-in" target="_blank"><span
+											class="icon icon-contact brands fa-linkedin-in" target="_blank"><span
 												class="label">LinkedIn</span></a></li>
 								</ul>
 							</li>
@@ -360,9 +372,10 @@
 				<script src="assets/js/main.js"></script>
 
 
-<!-- Link to your custom JavaScript file -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script src="contactform.js"></script>
+				<!-- Link to your custom JavaScript file -->
+				<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+				</script>
+				<script src="contactform.js"></script>
 </body>
 
 </html>
