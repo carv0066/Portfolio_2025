@@ -188,10 +188,6 @@ html {
 	box-sizing: inherit;
 }
 
-body {
-	background: #312450;
-}
-
 body.is-preload *,
 body.is-preload *:before,
 body.is-preload *:after {
@@ -2103,6 +2099,7 @@ button:hover,
 .home-button:hover {
 	color: #3e7c46;
 	background-color: #F8F8FF;
+	transform: translateY(-3px);
 }
 
 .about-button {
